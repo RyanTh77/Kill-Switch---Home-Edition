@@ -1,0 +1,247 @@
+[gd_scene format=3 uid="uid://bu18r4f7y67qg"]
+
+[ext_resource type="Script" uid="uid://b3tui5ruse4jf" path="res://how_to_play.gd" id="1_3nmlt"]
+[ext_resource type="Script" uid="uid://bthay2uqogkc6" path="res://Tutorial Settings Exit.gd" id="1_7as30"]
+[ext_resource type="VideoStream" uid="uid://chy11fev8m0n4" path="res://Assets/Looking.ogv" id="2_4dlf6"]
+[ext_resource type="Texture2D" uid="uid://cmqx1liw8w5lb" path="res://Assets/dark-yellow-concrete-scary-for-background-yellow-wall-halloween-background-concept-horror-cement-texture-free-photo.jpg" id="2_rwbob"]
+[ext_resource type="FontFile" uid="uid://cnofbkkayes77" path="res://Assets/bloodcrow.ttf" id="3_h8exd"]
+[ext_resource type="VideoStream" uid="uid://dmdl5u57vjoj6" path="res://Assets/Movement.ogv" id="4_3nmlt"]
+[ext_resource type="VideoStream" uid="uid://c6fsgm6w05ggg" path="res://Assets/Sprinting.ogv" id="5_a7hdb"]
+[ext_resource type="VideoStream" uid="uid://mwaveqhs6yal" path="res://Assets/Jumping.ogv" id="6_d8jej"]
+[ext_resource type="VideoStream" uid="uid://behq71a52agdr" path="res://Assets/Picking-Up.ogv" id="7_mfw1q"]
+[ext_resource type="VideoStream" uid="uid://dox7bnbsg0s0e" path="res://Assets/Dropping.ogv" id="8_o4nx0"]
+[ext_resource type="VideoStream" uid="uid://ct27t5uetqox" path="res://Assets/Throwing.ogv" id="9_rwbob"]
+[ext_resource type="VideoStream" uid="uid://d0j1c576rqals" path="res://Assets/Killing.ogv" id="10_h8exd"]
+
+[node name="How To Play" type="Control" unique_id=525564085]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3nmlt")
+
+[node name="DarkYellowConcreteScaryForBackgroundYellowWallHalloweenBackgroundConceptHorrorCementTextureFreePhoto" type="Sprite2D" parent="." unique_id=751702498]
+position = Vector2(950, 540)
+scale = Vector2(1.102, 1.102)
+texture = ExtResource("2_rwbob")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=839140116]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1486841944]
+layout_mode = 2
+
+[node name="How To Play" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1856373415]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 177
+text = "How To Play"
+horizontal_alignment = 1
+
+[node name="Back To Menu" type="Button" parent="PanelContainer/VBoxContainer/How To Play" unique_id=1335407961]
+layout_mode = 0
+offset_left = 1704.0
+offset_right = 1920.0
+offset_bottom = 216.0
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 176
+text = "X"
+script = ExtResource("1_7as30")
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/VBoxContainer" unique_id=1543110672]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/VBoxContainer" unique_id=385686831]
+layout_mode = 2
+
+[node name="Looking" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=452865057]
+layout_mode = 2
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 38
+text = "How To Look Around"
+
+[node name="Spacer" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=483223847]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 38
+
+[node name="Movement" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1637646860]
+layout_mode = 2
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 38
+text = "How To Move"
+
+[node name="Spacer2" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1893396057]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 38
+
+[node name="Sprinting" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1444003753]
+layout_mode = 2
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 38
+text = "How To Sprint"
+
+[node name="Spacer3" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1242069456]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 38
+
+[node name="Jumping" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=63116422]
+layout_mode = 2
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 38
+text = "How To Jump"
+
+[node name="Spacer4" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1426655546]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 38
+
+[node name="Picking Up" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1992178666]
+layout_mode = 2
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 38
+text = "How To Pick Up"
+
+[node name="Spacer5" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=467404644]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 38
+
+[node name="Dropping" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=237016043]
+layout_mode = 2
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 38
+text = "How To Drop"
+
+[node name="Spacer6" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1297873067]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 38
+
+[node name="Throwing" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=2036516320]
+layout_mode = 2
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 38
+text = "How To Throw"
+
+[node name="Spacer7" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1528462893]
+layout_mode = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 38
+
+[node name="Killing Enemies" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=476276155]
+layout_mode = 2
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("3_h8exd")
+theme_override_font_sizes/font_size = 38
+text = "How To Kill Enemies"
+
+[node name="Looking Around" type="VideoStreamPlayer" parent="." unique_id=144350718]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 216.0
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.8, 0.8)
+stream = ExtResource("2_4dlf6")
+loop = true
+
+[node name="Movement" type="VideoStreamPlayer" parent="." unique_id=644741278]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 216.0
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.8, 0.8)
+stream = ExtResource("4_3nmlt")
+loop = true
+
+[node name="Sprinting" type="VideoStreamPlayer" parent="." unique_id=1985157453]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 216.0
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.8, 0.8)
+stream = ExtResource("5_a7hdb")
+loop = true
+
+[node name="Jumping" type="VideoStreamPlayer" parent="." unique_id=677651831]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 216.0
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.8, 0.8)
+stream = ExtResource("6_d8jej")
+loop = true
+
+[node name="Picking Up" type="VideoStreamPlayer" parent="." unique_id=914164655]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 216.0
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.8, 0.8)
+stream = ExtResource("7_mfw1q")
+loop = true
+
+[node name="Dropping" type="VideoStreamPlayer" parent="." unique_id=1823788705]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 216.0
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.8, 0.8)
+stream = ExtResource("8_o4nx0")
+loop = true
+
+[node name="Throwing" type="VideoStreamPlayer" parent="." unique_id=1043219188]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 216.0
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.8, 0.8)
+stream = ExtResource("9_rwbob")
+loop = true
+
+[node name="Killing Enemies" type="VideoStreamPlayer" parent="." unique_id=954578445]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 216.0
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.8, 0.8)
+stream = ExtResource("10_h8exd")
+loop = true
+
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/GridContainer/Looking" to="." method="_on_looking_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/GridContainer/Looking" to="." method="_on_looking_mouse_exited"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/GridContainer/Movement" to="." method="_on_movement_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/GridContainer/Movement" to="." method="_on_movement_mouse_exited"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/GridContainer/Sprinting" to="." method="_on_sprinting_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/GridContainer/Sprinting" to="." method="_on_sprinting_mouse_exited"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/GridContainer/Jumping" to="." method="_on_jumping_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/GridContainer/Jumping" to="." method="_on_jumping_mouse_exited"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/GridContainer/Picking Up" to="." method="_on_picking_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/GridContainer/Picking Up" to="." method="_on_picking_mouse_exited"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/GridContainer/Dropping" to="." method="_on_dropping_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/GridContainer/Dropping" to="." method="_on_dropping_mouse_exited"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/GridContainer/Throwing" to="." method="_on_throwing_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/GridContainer/Throwing" to="." method="_on_throwing_mouse_exited"]
+[connection signal="mouse_entered" from="PanelContainer/VBoxContainer/GridContainer/Killing Enemies" to="." method="_on_killing_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/VBoxContainer/GridContainer/Killing Enemies" to="." method="_on_killing_mouse_exited"]

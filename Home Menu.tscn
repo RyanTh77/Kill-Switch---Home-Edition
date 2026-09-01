@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://6kxs6sllb6ln"]
+
+[ext_resource type="Texture2D" uid="uid://cmqx1liw8w5lb" path="res://Assets/dark-yellow-concrete-scary-for-background-yellow-wall-halloween-background-concept-horror-cement-texture-free-photo.jpg" id="1_qgi6a"]
+[ext_resource type="Script" path="res://menu_button.gd" id="2_6osrf"]
+[ext_resource type="Script" uid="uid://cyruvr82esxqm" path="res://Settings Button.gd" id="4_et5bp"]
+[ext_resource type="FontFile" uid="uid://cnofbkkayes77" path="res://Assets/bloodcrow.ttf" id="6_hry06"]
+[ext_resource type="Script" uid="uid://p1q8rbvvlm3u" path="res://How To Play.gd" id="6_itppv"]
+[ext_resource type="Script" uid="uid://caxcbtc2w28eq" path="res://exit.gd" id="6_qgi6a"]
+
+[node name="Control" type="Control" unique_id=837713077]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DarkYellowConcreteScaryForBackgroundYellowWallHalloweenBackgroundConceptHorrorCementTextureFreePhoto" type="Sprite2D" parent="." unique_id=1143254688]
+position = Vector2(950, 540)
+scale = Vector2(1.102, 1.102)
+texture = ExtResource("1_qgi6a")
+
+[node name="Start" type="MenuButton" parent="." unique_id=1899370633]
+layout_mode = 0
+offset_left = 585.00006
+offset_top = 474.0
+offset_right = 1335.0
+offset_bottom = 601.0
+rotation = -0.0015974925
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.38321832, 0.38321835, 0.38321832, 1)
+theme_override_constants/h_separation = 4
+theme_override_fonts/font = ExtResource("6_hry06")
+theme_override_font_sizes/font_size = 100
+text = "START"
+flat = false
+script = ExtResource("2_6osrf")
+
+[node name="Settings" type="MenuButton" parent="." unique_id=140185091]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 777.0
+offset_right = 1335.0
+offset_bottom = 904.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.38321832, 0.38321835, 0.38321832, 1)
+theme_override_fonts/font = ExtResource("6_hry06")
+theme_override_font_sizes/font_size = 100
+text = "SETTINGS"
+flat = false
+script = ExtResource("4_et5bp")
+
+[node name="Exit" type="MenuButton" parent="." unique_id=417750129]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 928.5
+offset_right = 1335.0
+offset_bottom = 1055.5
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.38321832, 0.38321835, 0.38321832, 1)
+theme_override_fonts/font = ExtResource("6_hry06")
+theme_override_font_sizes/font_size = 100
+text = "EXIT"
+flat = false
+script = ExtResource("6_qgi6a")
+
+[node name="Title" type="Label" parent="." unique_id=496050267]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.71770835
+anchor_top = -0.6157407
+anchor_right = 0.028125
+anchor_bottom = -0.36296296
+offset_left = 1378.0
+offset_top = 665.0
+offset_right = 1866.0
+offset_bottom = 866.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_hry06")
+theme_override_font_sizes/font_size = 199
+text = "Kill Switch:
+Home Edition"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="How To Play Button" type="MenuButton" parent="." unique_id=549083014]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 626.0
+offset_right = 1335.0
+offset_bottom = 753.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.38321832, 0.38321835, 0.38321832, 1)
+theme_override_fonts/font = ExtResource("6_hry06")
+theme_override_font_sizes/font_size = 100
+text = "HOW TO PLAY"
+flat = false
+script = ExtResource("6_itppv")
+
+[connection signal="pressed" from="Start" to="Start" method="_on_pressed"]
+[connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]
+[connection signal="pressed" from="How To Play Button" to="How To Play Button" method="_on_pressed"]

@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://cswj8l4qrqjka"]
+
+[ext_resource type="Texture2D" uid="uid://cmqx1liw8w5lb" path="res://Assets/dark-yellow-concrete-scary-for-background-yellow-wall-halloween-background-concept-horror-cement-texture-free-photo.jpg" id="1_73or5"]
+[ext_resource type="FontFile" uid="uid://cnofbkkayes77" path="res://Assets/bloodcrow.ttf" id="3_73or5"]
+[ext_resource type="Script" uid="uid://bv7y6gs3f6xn2" path="res://menu_button_2.gd" id="4_tyy4w"]
+[ext_resource type="Script" uid="uid://b7xkyci1kgvff" path="res://color_rect.gd" id="5_swigd"]
+[ext_resource type="Script" uid="uid://c6r0k7vm7dc5i" path="res://Back To Main Button.gd" id="6_73or5"]
+[ext_resource type="Script" uid="uid://b86dsbdk5f8q7" path="res://Got It.gd" id="6_hp7xp"]
+[ext_resource type="Script" uid="uid://p1q8rbvvlm3u" path="res://How To Play.gd" id="7_73or5"]
+
+[node name="Control" type="Control" unique_id=1478517123]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DarkYellowConcreteScaryForBackgroundYellowWallHalloweenBackgroundConceptHorrorCementTextureFreePhoto" type="Sprite2D" parent="." unique_id=2123644876]
+position = Vector2(950, 540)
+scale = Vector2(1.102, 1.102)
+texture = ExtResource("1_73or5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1837373019]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=397802444]
+offset_left = 48.0
+offset_top = 752.0
+offset_right = 552.0
+offset_bottom = 1040.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("5_swigd")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/ColorRect" unique_id=575708807]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 496.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_73or5")
+theme_override_font_sizes/font_size = 47
+text = "Click on Settings to
+change your settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="CanvasLayer/ColorRect" unique_id=1944983637]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 200.0
+offset_right = 496.0
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_73or5")
+theme_override_font_sizes/font_size = 40
+text = "Got It"
+script = ExtResource("6_hp7xp")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer" unique_id=1466309888]
+offset_left = 1370.0
+offset_top = 657.0
+offset_right = 1874.0
+offset_bottom = 945.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("5_swigd")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/ColorRect2" unique_id=1421200189]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 496.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_73or5")
+theme_override_font_sizes/font_size = 47
+text = "Click on how to
+play to learn how to
+play."
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="CanvasLayer/ColorRect2" unique_id=729952502]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.015873017
+anchor_right = 0.015873017
+offset_left = 352.0
+offset_top = 200.0
+offset_right = 496.0
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_73or5")
+theme_override_font_sizes/font_size = 40
+text = "Got It"
+script = ExtResource("6_hp7xp")
+metadata/_edit_use_anchors_ = true
+
+[node name="Back Button" type="MenuButton" parent="." unique_id=1994403478]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 475.0
+offset_right = 1335.0
+offset_bottom = 625.0
+rotation = -0.0015974925
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.38321832, 0.38321835, 0.38321832, 1)
+theme_override_constants/h_separation = 4
+theme_override_fonts/font = ExtResource("3_73or5")
+theme_override_font_sizes/font_size = 100
+text = "BACK HOME"
+flat = false
+script = ExtResource("6_73or5")
+
+[node name="How To Play Button" type="MenuButton" parent="." unique_id=556301574]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 655.0
+offset_right = 1335.0
+offset_bottom = 805.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.38321832, 0.38321835, 0.38321832, 1)
+theme_override_fonts/font = ExtResource("3_73or5")
+theme_override_font_sizes/font_size = 100
+text = "HOW TO PLAY"
+flat = false
+script = ExtResource("7_73or5")
+
+[node name="How To Play Button2" type="MenuButton" parent="." unique_id=556279829]
+layout_mode = 0
+offset_left = 585.0
+offset_top = 835.0
+offset_right = 1335.0
+offset_bottom = 985.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.38321832, 0.38321835, 0.38321832, 1)
+theme_override_fonts/font = ExtResource("3_73or5")
+theme_override_font_sizes/font_size = 100
+text = "SETTINGS"
+flat = false
+script = ExtResource("4_tyy4w")
+
+[node name="Title" type="Label" parent="." unique_id=1540472013]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.71770835
+anchor_top = -0.6157407
+anchor_right = 0.028125
+anchor_bottom = -0.36296296
+offset_left = 1378.0
+offset_top = 665.0
+offset_right = 1866.0
+offset_bottom = 866.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_73or5")
+theme_override_font_sizes/font_size = 199
+text = "Kill Switch:
+Home Edition"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/ColorRect/Button" to="CanvasLayer/ColorRect" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/ColorRect2/Button" to="CanvasLayer/ColorRect2" method="_on_pressed"]
+[connection signal="pressed" from="Back Button" to="Back Button" method="_on_pressed"]
+[connection signal="pressed" from="How To Play Button" to="How To Play Button" method="_on_pressed"]

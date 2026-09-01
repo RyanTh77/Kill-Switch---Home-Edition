@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bs2k4i873466v"]
+
+[ext_resource type="Script" uid="uid://b7dqyxhgdmgtu" path="res://character_body_3d.gd" id="1_noarx"]
+[ext_resource type="PackedScene" uid="uid://c83wexflwjnso" path="res://Male_Casual.fbx" id="2_a0tk4"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r3fl7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_noarx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jka67"]
+radius = 0.4951172
+height = 4.832123
+
+[node name="Node3D" type="Node3D" unique_id=1325101004]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1462440893]
+transform = Transform3D(10, 0, 0, 0, 0.1, 0, 0, 0, 10, 0, -0.05, 0)
+mesh = SubResource("BoxMesh_r3fl7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D" unique_id=828522883]
+shape = SubResource("BoxShape3D_noarx")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1466625238]
+script = ExtResource("1_noarx")
+
+[node name="Male_Casual" parent="CharacterBody3D" unique_id=1774957916 instance=ExtResource("2_a0tk4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1999846561]
+transform = Transform3D(1.5517782, 0, 0, 0, 1, 0, 0, 0, 0.8008222, -0.00091063976, 2.42189, 0.06384164)
+shape = SubResource("CapsuleShape3D_jka67")
+debug_color = Color(18.328726, 0, 11.215399, 1)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CharacterBody3D" unique_id=29528992]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/SpringArm3D" unique_id=345645473]

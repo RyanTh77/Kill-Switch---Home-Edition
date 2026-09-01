@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b43vsr21tf36v"]
+
+[ext_resource type="AudioStream" uid="uid://7yce2livsx3" path="res://Assets/lachm-sound-ambience-sonido-ambiente-25-14214.mp3" id="1_tylfe"]
+
+[node name="Music Manager" type="Control" unique_id=403696116]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1655489386]
+stream = ExtResource("1_tylfe")
+volume_db = -22.645
+autoplay = true
+parameters/looping = true

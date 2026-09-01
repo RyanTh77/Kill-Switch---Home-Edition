@@ -1,0 +1,377 @@
+[gd_scene format=3 uid="uid://cekxalblou2pw"]
+
+[ext_resource type="FontFile" uid="uid://cnofbkkayes77" path="res://Assets/bloodcrow.ttf" id="1_si52h"]
+[ext_resource type="Script" uid="uid://bthay2uqogkc6" path="res://Tutorial Settings Exit.gd" id="1_v56a6"]
+[ext_resource type="Script" uid="uid://brtkcrym2qv1v" path="res://shadow_quality_selector.gd" id="2_si52h"]
+[ext_resource type="Script" uid="uid://chpnee4ac37a6" path="res://reflection_quality_selector.gd" id="3_7ay3c"]
+[ext_resource type="Script" uid="uid://bxaysg0wcxc1w" path="res://ssao_selector.gd" id="4_nxe6q"]
+[ext_resource type="Script" uid="uid://cpgq24jsevscd" path="res://indirect_lighting_selector.gd" id="5_pc0tr"]
+[ext_resource type="Script" uid="uid://bdh8u6vl2db0k" path="res://glow_upscale_mode_selector.gd" id="6_24tsj"]
+[ext_resource type="Script" uid="uid://b78url623r224" path="res://antialiasing_selector.gd" id="7_ud2as"]
+[ext_resource type="Script" uid="uid://b7xkyci1kgvff" path="res://color_rect.gd" id="8_iklsn"]
+[ext_resource type="Script" uid="uid://b86dsbdk5f8q7" path="res://Got It.gd" id="9_y375o"]
+
+[node name="Settings" type="Control" unique_id=572584219]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1836604159]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=2072182492]
+layout_mode = 2
+
+[node name="Settings" type="Label" parent="PanelContainer/VBoxContainer" unique_id=2128313570]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 100
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="Back To Menu" type="Button" parent="PanelContainer/VBoxContainer/Settings" unique_id=1895702372]
+layout_mode = 0
+offset_left = 1795.0
+offset_right = 1920.0
+offset_bottom = 125.0
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 99
+text = "X"
+script = ExtResource("1_v56a6")
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/VBoxContainer" unique_id=240812005]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/VBoxContainer" unique_id=978040335]
+layout_mode = 2
+columns = 3
+
+[node name="Texture Quality" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=791216919]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 46
+text = " Texture
+ Quality"
+
+[node name="Texture Quality Selector" type="OptionButton" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1829005006]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 34
+item_count = 5
+popup/item_0/text = "Lowest"
+popup/item_0/id = 0
+popup/item_1/text = "Low"
+popup/item_1/id = 1
+popup/item_2/text = "Normal"
+popup/item_2/id = 2
+popup/item_3/text = "High"
+popup/item_3/id = 3
+popup/item_4/text = "Ultra"
+popup/item_4/id = 4
+script = ExtResource("2_si52h")
+
+[node name="Texture Description" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1338036190]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 36
+text = " The quality of the textures. VRAM Heavy.
+"
+vertical_alignment = 1
+
+[node name="Shadow Quality" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1318722873]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 46
+text = " Shadow
+ Quality"
+
+[node name="Shadow Quality Selector" type="OptionButton" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=795542783]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 34
+item_count = 5
+popup/item_0/text = "Lowest"
+popup/item_0/id = 0
+popup/item_1/text = "Low"
+popup/item_1/id = 1
+popup/item_2/text = "Normal"
+popup/item_2/id = 2
+popup/item_3/text = "High"
+popup/item_3/id = 3
+popup/item_4/text = "Ultra"
+popup/item_4/id = 4
+script = ExtResource("2_si52h")
+
+[node name="Shadow Description" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1676311733]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 36
+text = " The resolution of the shadows on your screen projected
+ by the sun or interior lighting."
+
+[node name="Reflection Quality" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1689058948]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 46
+text = " Reflection
+ Quality "
+
+[node name="Reflection Quality Selector" type="OptionButton" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=328334118]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 34
+item_count = 5
+popup/item_0/text = "Lowest"
+popup/item_0/id = 0
+popup/item_1/text = "Low"
+popup/item_1/id = 1
+popup/item_2/text = "Normal"
+popup/item_2/id = 2
+popup/item_3/text = "High"
+popup/item_3/id = 3
+popup/item_4/text = "Ultra"
+popup/item_4/id = 4
+script = ExtResource("3_7ay3c")
+
+[node name="Reflection Description" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=173424103]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 36
+text = " The resolution of the visual reflections on your screen
+ from the sun or interior lights."
+
+[node name="SSAO" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1636284795]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 46
+text = " Ambient
+ Occlusion"
+
+[node name="SSAO Selector" type="OptionButton" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=324356585]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 34
+item_count = 5
+popup/item_0/text = "Lowest"
+popup/item_0/id = 0
+popup/item_1/text = "Low"
+popup/item_1/id = 1
+popup/item_2/text = "Normal"
+popup/item_2/id = 2
+popup/item_3/text = "High"
+popup/item_3/id = 3
+popup/item_4/text = "Ultra"
+popup/item_4/id = 4
+script = ExtResource("4_nxe6q")
+
+[node name="SSAO Description" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1059796254]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 36
+text = " The dimming of areas where light should not reach,
+ like corners of rooms and unlit areas."
+
+[node name="Indirect Lighting" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=2070536342]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 46
+text = " Indirect
+ Lighting"
+
+[node name="Indirect Lighting Selector" type="OptionButton" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=702076713]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 34
+item_count = 5
+popup/item_0/text = "Lowest"
+popup/item_0/id = 0
+popup/item_1/text = "Low"
+popup/item_1/id = 1
+popup/item_2/text = "Normal"
+popup/item_2/id = 2
+popup/item_3/text = "High"
+popup/item_3/id = 3
+popup/item_4/text = "Ultra"
+popup/item_4/id = 4
+script = ExtResource("5_pc0tr")
+
+[node name="SSIL Description" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=989585320]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 36
+text = " The projection of ambient light that doesn't directly
+ reach an area, but through reflections or diffraction."
+
+[node name="Glow Upscale Mode" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=772458438]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 46
+text = " Glow Upscale 
+ Mode"
+
+[node name="Glow Upscale Mode Selector" type="OptionButton" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1756235332]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 34
+item_count = 2
+popup/item_0/text = "Linear (Low)"
+popup/item_0/id = 0
+popup/item_1/text = "Bicubic (High)"
+popup/item_1/id = 1
+script = ExtResource("6_24tsj")
+
+[node name="Glow Description" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=854232905]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 36
+text = " The method by which lights are rendered, with bicubic
+ being more realistic than linear."
+
+[node name="Antialiasing" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=766990999]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 46
+text = " Antialiasing
+"
+
+[node name="Antialiasing Selector" type="OptionButton" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=933982185]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 34
+item_count = 4
+popup/item_0/text = "Off"
+popup/item_0/id = 0
+popup/item_1/text = "X2 (Low)"
+popup/item_1/id = 1
+popup/item_2/text = "X4 (Meduim)"
+popup/item_2/id = 2
+popup/item_3/text = "X8 (High)"
+popup/item_3/id = 3
+script = ExtResource("7_ud2as")
+
+[node name="Antialiasing Description" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=430432305]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 36
+text = " Antialiasing smoothes jagged or pixelated edges to
+ look nicer."
+
+[node name="Upscaling" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=1594772972]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 46
+text = " Upscaling
+"
+
+[node name="Upscaling Selector" type="OptionButton" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=846034486]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 34
+item_count = 6
+popup/item_0/text = "Off"
+popup/item_0/id = 0
+popup/item_1/text = "FSR 2.2 Quality"
+popup/item_1/id = 1
+popup/item_2/text = "FSR 2.2 Medium"
+popup/item_2/id = 2
+popup/item_3/text = "FSR 2.2 Performance"
+popup/item_3/id = 3
+popup/item_4/text = "FSR 2.2 Extreme (Use if you have NO FPS)"
+popup/item_4/id = 4
+popup/item_4/separator = true
+popup/item_5/text = "FSR 2.2 Extreme"
+popup/item_5/id = 4
+script = ExtResource("7_ud2as")
+
+[node name="Upscaling Description" type="Label" parent="PanelContainer/VBoxContainer/GridContainer" unique_id=661076642]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 36
+text = " Upscaling renders the game at lower resolutions, then
+ uses AI to upscale it to your monitor's resolution."
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1828977151]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=230851280]
+offset_left = 983.0
+offset_top = 178.0
+offset_right = 1487.0
+offset_bottom = 466.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("8_iklsn")
+
+[node name="Label" type="Label" parent="CanvasLayer/ColorRect" unique_id=1374360661]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 496.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 43
+text = "Click on the
+dropdown boxes to
+change your settings."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/ColorRect" unique_id=625630211]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 200.0
+offset_right = 496.0
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 40
+text = "Got It"
+script = ExtResource("9_y375o")
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer" unique_id=1093467838]
+visible = false
+offset_left = 1393.0
+offset_top = 145.0
+offset_right = 1897.0
+offset_bottom = 433.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("8_iklsn")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/ColorRect2" unique_id=13584928]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.001984127
+anchor_right = -0.001984127
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 496.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 43
+text = "Click on X to go back."
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="CanvasLayer/ColorRect2" unique_id=1554508441]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 200.0
+offset_right = 496.0
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_si52h")
+theme_override_font_sizes/font_size = 40
+text = "Got It"
+script = ExtResource("9_y375o")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/ColorRect/Button" to="CanvasLayer/ColorRect" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/ColorRect/Button" to="CanvasLayer/ColorRect2" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/ColorRect2/Button" to="CanvasLayer/ColorRect2" method="_on_pressed"]

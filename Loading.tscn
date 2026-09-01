@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://0eusdc8xlalh"]
+
+[ext_resource type="Script" uid="uid://bxrmnrsiqu0fm" path="res://loading.gd" id="1_1dm06"]
+[ext_resource type="Texture2D" uid="uid://cmqx1liw8w5lb" path="res://Assets/dark-yellow-concrete-scary-for-background-yellow-wall-halloween-background-concept-horror-cement-texture-free-photo.jpg" id="2_1dm06"]
+[ext_resource type="FontFile" uid="uid://cnofbkkayes77" path="res://Assets/bloodcrow.ttf" id="3_0u603"]
+
+[node name="Control" type="Control" unique_id=769859910]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1dm06")
+
+[node name="DarkYellowConcreteScaryForBackgroundYellowWallHalloweenBackgroundConceptHorrorCementTextureFreePhoto" type="Sprite2D" parent="." unique_id=1273396803]
+position = Vector2(950, 540)
+scale = Vector2(1.102, 1.102)
+texture = ExtResource("2_1dm06")
+
+[node name="Title" type="Label" parent="." unique_id=1580281751]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.71770835
+anchor_top = -0.6157407
+anchor_right = 0.028125
+anchor_bottom = -0.36296296
+offset_left = 1378.0
+offset_top = 665.0
+offset_right = 1866.0
+offset_bottom = 866.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0u603")
+theme_override_font_sizes/font_size = 199
+text = "Kill Switch:
+Home Edition"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Title2" type="Label" parent="." unique_id=2137299360]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.71770835
+anchor_top = -0.20833333
+anchor_right = 0.028125
+anchor_bottom = 0.044444446
+offset_left = 1378.0
+offset_top = 665.0
+offset_right = 1866.0
+offset_bottom = 866.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0u603")
+theme_override_font_sizes/font_size = 199
+text = "LOADING"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Title3" type="Label" parent="." unique_id=474228055]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.71770835
+anchor_top = -0.04537037
+anchor_right = 0.028125
+anchor_bottom = 0.2074074
+offset_left = 1378.0
+offset_top = 665.0
+offset_right = 1866.0
+offset_bottom = 866.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0u603")
+theme_override_font_sizes/font_size = 100
+text = "Please Wait"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

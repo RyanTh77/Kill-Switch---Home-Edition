@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cemr4d00bv5rt"]
+
+[ext_resource type="Script" uid="uid://cighi1meatuk7" path="res://button.gd" id="1_mb6q6"]
+
+[node name="You Died" type="Control" unique_id=812459285]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Lose" type="Label" parent="." unique_id=1081696106]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 540.0
+theme_override_colors/font_color = Color(0.13725491, 0.13725491, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.056703635, 0, 0.5685761, 1)
+theme_override_font_sizes/font_size = 120
+text = "You Died!"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Button" type="Button" parent="." unique_id=796198470]
+layout_mode = 0
+offset_left = 683.5
+offset_top = 540.0
+offset_right = 1236.5
+offset_bottom = 685.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_pressed_color = Color(0.5705783, 0.57057834, 0.57057834, 1)
+theme_override_colors/font_hover_color = Color(0.5673676, 0.5673676, 0.5673687, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.5705783, 0.57057834, 0.57057834, 1)
+theme_override_font_sizes/font_size = 100
+text = "Main Menu"
+script = ExtResource("1_mb6q6")
