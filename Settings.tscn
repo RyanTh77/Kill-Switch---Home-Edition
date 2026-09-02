@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bc3tworehgonx"]
 
+[ext_resource type="Texture2D" path="res://Assets/Main Background.jpg" id="1_73or5"]
 [ext_resource type="Script" uid="uid://co7xq3lmll5tw" path="res://settings.gd" id="1_71mvm"]
 [ext_resource type="Script" uid="uid://3smh1s4ouh5b" path="res://back_to_menu.gd" id="1_bvb5x"]
 [ext_resource type="FontFile" uid="uid://cnofbkkayes77" path="res://Assets/bloodcrow.ttf" id="2_8uskx"]
-[ext_resource type="Texture2D" uid="uid://cmqx1liw8w5lb" path="res://Assets/dark-yellow-concrete-scary-for-background-yellow-wall-halloween-background-concept-horror-cement-texture-free-photo.jpg" id="2_xffxv"]
 
 [node name="Settings" type="Control" unique_id=2049958668]
 layout_mode = 3
@@ -14,10 +14,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_71mvm")
 
-[node name="DarkYellowConcreteScaryForBackgroundYellowWallHalloweenBackgroundConceptHorrorCementTextureFreePhoto" type="Sprite2D" parent="." unique_id=1439542433]
+[node name="Main Background" type="Sprite2D" parent="." unique_id=2123644876]
 position = Vector2(950, 540)
 scale = Vector2(1.102, 1.102)
-texture = ExtResource("2_xffxv")
+texture = ExtResource("1_73or5")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=892491200]
 layout_mode = 0

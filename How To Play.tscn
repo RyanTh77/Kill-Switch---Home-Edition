@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bu18r4f7y67qg"]
 
+[ext_resource type="Texture2D" path="res://Assets/Main Background.jpg" id="1_73or5"]
 [ext_resource type="Script" uid="uid://b3tui5ruse4jf" path="res://how_to_play.gd" id="1_3nmlt"]
 [ext_resource type="Script" uid="uid://bthay2uqogkc6" path="res://Tutorial Settings Exit.gd" id="1_7as30"]
 [ext_resource type="VideoStream" uid="uid://chy11fev8m0n4" path="res://Assets/Looking.ogv" id="2_4dlf6"]
-[ext_resource type="Texture2D" uid="uid://cmqx1liw8w5lb" path="res://Assets/dark-yellow-concrete-scary-for-background-yellow-wall-halloween-background-concept-horror-cement-texture-free-photo.jpg" id="2_rwbob"]
 [ext_resource type="FontFile" uid="uid://cnofbkkayes77" path="res://Assets/bloodcrow.ttf" id="3_h8exd"]
 [ext_resource type="VideoStream" uid="uid://dmdl5u57vjoj6" path="res://Assets/Movement.ogv" id="4_3nmlt"]
 [ext_resource type="VideoStream" uid="uid://c6fsgm6w05ggg" path="res://Assets/Sprinting.ogv" id="5_a7hdb"]
@@ -22,10 +22,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_3nmlt")
 
-[node name="DarkYellowConcreteScaryForBackgroundYellowWallHalloweenBackgroundConceptHorrorCementTextureFreePhoto" type="Sprite2D" parent="." unique_id=751702498]
+[node name="Main Background" type="Sprite2D" parent="." unique_id=2123644876]
 position = Vector2(950, 540)
 scale = Vector2(1.102, 1.102)
-texture = ExtResource("2_rwbob")
+texture = ExtResource("1_73or5")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=839140116]
 layout_mode = 0

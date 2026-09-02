@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cswj8l4qrqjka"]
 
-[ext_resource type="Texture2D" uid="uid://cmqx1liw8w5lb" path="res://Assets/dark-yellow-concrete-scary-for-background-yellow-wall-halloween-background-concept-horror-cement-texture-free-photo.jpg" id="1_73or5"]
+[ext_resource type="Texture2D" path="res://Assets/Main Background.jpg" id="1_73or5"]
 [ext_resource type="FontFile" uid="uid://cnofbkkayes77" path="res://Assets/bloodcrow.ttf" id="3_73or5"]
 [ext_resource type="Script" uid="uid://bv7y6gs3f6xn2" path="res://menu_button_2.gd" id="4_tyy4w"]
 [ext_resource type="Script" uid="uid://b7xkyci1kgvff" path="res://color_rect.gd" id="5_swigd"]
@@ -16,7 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="DarkYellowConcreteScaryForBackgroundYellowWallHalloweenBackgroundConceptHorrorCementTextureFreePhoto" type="Sprite2D" parent="." unique_id=2123644876]
+[node name="Main Background" type="Sprite2D" parent="." unique_id=2123644876]
 position = Vector2(950, 540)
 scale = Vector2(1.102, 1.102)
 texture = ExtResource("1_73or5")
